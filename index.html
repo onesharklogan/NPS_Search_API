@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Park Service - Search Parks</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <form id="search-form">
+                <h1>Search National Parks</h1>
+                <p>
+                    Enter State:
+                </p>
+                <input type="text" id="state-name" placeholder="Enter a state. Ex: MN" />
+                <br />
+                <p>
+                    Maximum Results:
+                </p>
+                <input type="text" id="max-results" placeholder="Default = 10" />
+                <p></p>
+                <input id="submit-button" type="submit" value="Search" />
+            </form>
+        </section>
+        <section id="results" class="hidden">
+            <p>Here are your parks:</p>
+            <ol id="results-list"></ol>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
