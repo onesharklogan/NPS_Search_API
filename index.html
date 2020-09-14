@@ -12,17 +12,21 @@
 <body>
     <main>
         <section>
+            <h1>Search National Parks</h1>
+
             <form id="search-form">
-                <h1>Search National Parks</h1>
-                <p>
+                <label for="state-name">
                     Enter State:
-                </p>
+                </label>
+                </br>
                 <input type="text" id="state-name" placeholder="Enter a state. Ex: MN" />
-                <br />
-                <p>
+                </br>
+                </br>
+                <label for="max-results">
                     Maximum Results:
-                </p>
-                <input type="text" id="max-results" placeholder="Default = 10" />
+                </label>
+                </br>
+                <input type="text" id="max-results" value=10 />
                 <p></p>
                 <input id="submit-button" type="submit" value="Search" />
             </form>
